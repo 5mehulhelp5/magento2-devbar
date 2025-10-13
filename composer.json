@@ -1,0 +1,29 @@
+{
+    "name": "perfcom/magento2-devbar",
+    "description": "This module adds a floating bar to the frontend with useful information and shortcuts for developers.",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "type": "composer-plugin",
+    "authors": [
+        {
+            "name": "Louis de Looze",
+            "email": "louis@perfcom.dev"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "magento/framework": "*",
+        "magento/module-catalog": "*",
+        "magento/module-checkout": "*",
+        "magento/module-customer": "*",
+        "magento/module-quote": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Perfcom\\Devbar\\": ""
+        }
+    }
+}
